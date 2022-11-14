@@ -29,11 +29,30 @@
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Refrence </a>
     </div>
 
+    Forms:
     <label for="name">Name (1 to 8 characters):</label>
     <input type="text" id="name" name="name"
         required
             minlength="1" maxlength="8" size="10">
-    Forms:
-    
+            <label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>    
+<div class="preference">
+    <label for="cheese">Do you like cheese?</label>
+    <input type="checkbox" name="cheese" id="cheese">
+</div>
+
+<div class="preference">
+    <label for="peas">Do you like peas?</label>
+    <input type="checkbox" name="peas" id="peas">
+</div>
+
 </body>
 </html>
